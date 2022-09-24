@@ -1,3 +1,23 @@
+let lista6: number[] = [17, 21, 16, 14, 9, 22, 12, 43, 99, 44, 32]
+
+let adicionar: number[] = lista6.map((num: number) => (num += 1))
+console.log(adicionar)
+
+let listImpar: number[] = lista6.filter((impar: number) => impar % 2 !== 0)
+console.log(listImpar)
+
+let somaPar: number[] = lista6.map((numero: number) => (numero += 1))
+console.log(somaPar)
+
+let menores: number[] = lista6.filter((value: number) => value < 20)
+console.log(menores)
+
+let menores17: number[] = lista6.filter((value: number) => value < 17)
+let incremento: number[] = menores17.map((numero: number) => (numero += 1))
+console.log(incremento)
+
+let somaNum: number = menores.reduce((acumul: number, inicial: number) => (acumul += inicial))
+console.log(somaNum)
 // 6. Dado a seguinte lista de números:
 // 17, 21, 16, 14, 9, 22, 12, 43, 99, 44, 32
 
